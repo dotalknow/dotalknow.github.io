@@ -62,9 +62,6 @@ h2 {
 }
 .nav_link:hover {
   color: #fff;
-  border-bottom-style: dotted;
-  border-bottom-color:#fff;
-  border-bottom-width: 2px;
 }
 .logo img {
   position: absolute;
