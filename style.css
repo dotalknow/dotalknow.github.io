@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   line-height: 1.6;
   color: white;
   align-items: center;
@@ -24,7 +24,6 @@ h2 {
   font-size: 25px;
   font-weight: 300;
   margin: 0 auto;
-  margin-right: 10px;
 }
 h3 {
   font-family: 'Comfortaa', cursive;
@@ -42,20 +41,14 @@ h4 {
   background: #202023;
   width: 20px;
 }
-
-/* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 4px white;
   border-radius: 10px;
 }
-
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #e8a125;
   border-radius: 10px;
 }
-
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #c47d00;
 }
@@ -72,8 +65,7 @@ h4 {
   z-index: 1000;
   position: fixed;
   width: 100%;
-  top: 0;
-  height: 80px;
+  height: 75px;
   background: linear-gradient(to bottom, #202023 0%, #19191b 95%);
   display: flex;
   justify-content: space-between;
@@ -93,12 +85,11 @@ h4 {
   font-size: 25px;
   color: #fff;
   padding: 20px;
-  transition: color .3s linear;
+  transition: color .2s linear;
 }
 .nav_link:hover {
   color: #e8a125;
   border-bottom-style: solid;
-  border-radius: 4px;
 }
 .logo img {
   position: absolute;
@@ -161,6 +152,22 @@ h4 {
   display: flex;
   justify-content: space-between;
 }
+.subtitle__left {
+  width: 80%;
+  display: inline-block;
+  margin-right: 10px;
+
+}
+.subtitle__right {
+  width: 80%;
+  display: inline-block;
+  margin-left: 10px;
+
+}
+.subtitle img {
+  width: 20%;
+  display: inline-block;
+}
 /*  Gallery  */
 .gallery {
   display: flex;
@@ -183,58 +190,56 @@ h4 {
 }
 /*  Lessons  */
 .lessons {
-  margin-top: 40px;
+  max-width: 1000px;
+  width: 100%;
+  padding-top: 40px;
+  margin: 0 auto;
 }
 .lesson {
-  position: relative;
-  max-width: 800px;
-  max-height: 130px;
-  width: 100%;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #e8a125;
+  display: inline-flex;
+  justify-content: space-between;
+  margin-left: 3%;
+  margin-right: 3%;
   border-radius: 20px;
-  margin: 0 auto;
-  display: flex;
+  border-style: solid;
   margin-bottom: 40px;
-}
-.namelesson {
-  font-size: 20px;
-  padding-top: 15px;
-}
-.desclesson {
-  font-size: 12px;
-  max-width: 400px;
+  align-items: center;
+  border-color: #e8a125;
 }
 .imglesson {
-  padding: 15px;
+  margin: 2%;
+}
+.namelesson {
+  margin-top: 2%;
+}
+.desclesson {
+  margin-bottom: 2%;
 }
 .btnlesson {
-  padding: 10px;
-  border-style: solid;
-  font-family: 'Russo One', sans-serif;
-  font-size: 20px;
+  width: 25%;
+  margin-left: 3%;
+  margin-right: 3%;
   border-radius: 50px;
-  border-width: 1px;
-  position: absolute;
-  max-width: 200px;
+  border-style: solid;
+  padding: 1% 2%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Russo One', sans-serif;
   text-decoration: none;
-  top: 40px;
-  left: 590px;
-  color: black;
   background-color: #202023;
-  color: white;
-  transition: linear .2s;
+  color: #fff;
+  transition: .2s linear;
 }
 .btnlesson:hover {
-  color: #202023;
-  -moz-box-shadow:0 0 5px #202023;
-  -webkit-box-shadow:0 0 5px #202023;
-  box-shadow:0 0 5px #202023;
-  background-color: #fff;
+color: #202023;
+-moz-box-shadow:0 0 5px #202023;
+-webkit-box-shadow:0 0 5px #202023;
+box-shadow:0 0 5px #202023;
+background-color: #fff;
 }
 /*  Outro  */
 .bottom__line {
+  width: 100%;
   height: 65px;
   background-color: #252525;
 }
@@ -261,4 +266,43 @@ h4 {
 }
 .btm__link:hover {
   color: #fff;
+}
+/*  Media  */
+@media screen and (max-width:1200px) {
+  .subtitle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .subtitle__left {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .subtitle__right {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .subtitle img {
+    width: 100%;
+    max-width: 555px;
+    max-height: 480px;
+    margin: 30px auto;
+  }
+  .gallery {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery img {
+    overflow:hidden;
+    width: 100%;
+    margin: 30px auto;
+    max-width: 380px;
+    max-height:250px;
+  }
+  .gallery img:first-child{
+    margin-top: 0;
+
+  }
 }
