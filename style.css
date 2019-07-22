@@ -24,6 +24,7 @@ h2 {
   font-size: 25px;
   font-weight: 300;
   margin: 0 auto;
+  line-height: 1.3;
 }
 h3 {
   font-family: 'Comfortaa', cursive;
@@ -86,6 +87,7 @@ h4 {
   color: #fff;
   padding: 20px;
   transition: color .2s linear;
+  transition: border .1s linear;
 }
 .nav_link:hover {
   color: #e8a125;
@@ -153,18 +155,21 @@ h4 {
   justify-content: space-between;
 }
 .subtitle__left {
+  text-align: center;
   width: 80%;
   display: inline-block;
   margin-right: 10px;
 
 }
 .subtitle__right {
+  text-align: center;
   width: 80%;
   display: inline-block;
   margin-left: 10px;
 
 }
 .subtitle img {
+  position: relative;
   width: 20%;
   display: inline-block;
 }
@@ -210,9 +215,12 @@ h4 {
   margin: 2%;
 }
 .namelesson {
+  font-size: 30px;
   margin-top: 2%;
 }
 .desclesson {
+  line-height: 1.2;
+  font-size: 15px;
   margin-bottom: 2%;
 }
 .btnlesson {
@@ -289,6 +297,7 @@ background-color: #fff;
     max-width: 555px;
     max-height: 480px;
     margin: 30px auto;
+    margin-top: 0;
   }
   .gallery {
     display: flex;
