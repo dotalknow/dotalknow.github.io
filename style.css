@@ -257,15 +257,11 @@ h4 {
   transform: translateX(0);
 }
 
-@media screen and (max-width: 600px) {
-  body {
-    margin: 0;
-  }
-
+@media screen and (max-width: 1080px) {
   .accordion {
     height: auto;
   }
-  .accordion ul li, .accordion ul li:hover, .accordion ul:hover li, .accordion ul:hover li:hover {
+  .accordion ul li, .accordion ul li:active, .accordion ul:active li, .accordion ul:active li:active {
     position: relative;
     display: table;
     table-layout: fixed;
@@ -274,19 +270,7 @@ h4 {
     transition: none;
   }
 }
-.about {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
-  color: #666;
-}
-.about a {
-  color: blue;
-  text-decoration: none;
-}
-.about a:hover {
-  text-decoration: underline;
-}
+
 /*  Lessons  */
 .lessons {
   max-width: 1000px;
