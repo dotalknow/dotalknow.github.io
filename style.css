@@ -257,17 +257,13 @@ h4 {
   transform: translateX(0);
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1200px) {
   .accordion {
     height: auto;
   }
-  .accordion ul li, .accordion ul li:active, .accordion ul:active li, .accordion ul:active li:active {
-    position: relative;
-    display: table;
-    table-layout: fixed;
+  .accordion {
     width: 100%;
-    -webkit-transition: none;
-    transition: none;
+    display: flex;
   }
 }
 
